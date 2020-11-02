@@ -50,6 +50,10 @@ h1 {
     margin: auto;
 }
 
+.Slides.active {
+    display: block
+}
+
 .Slides {
     display: none;
 }
