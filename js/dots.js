@@ -1,16 +1,14 @@
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function slideAtual(n) {
-    showSlides(slideIndex = n);
+function slide1() {
+    document.getElementById('id').src = "/imagens/imagem1.jpg";
+    setTimeout("slide2()", 1000)
 }
 
-function showSlides(n) {
-    var dots = document.getElementsByClassName('dots');
+function slide2() {
+    document.getElementById('id').src = "/imagens/imagem2.jpg";
+    setTimeout("slide3()", 1000)
+}
 
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace("active", " ");
-    }
-
-    dots[slideIndex - 1].className += 'active';
+function slide3() {
+    document.getElementById('id').src = "/imagens/imagem3.jpg";
+    setTimeout("slide1()", 1000)
 }

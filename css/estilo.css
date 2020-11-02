@@ -50,6 +50,10 @@ h1 {
     margin: auto;
 }
 
+.Slides {
+    display: none;
+}
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -65,7 +69,6 @@ h1 {
     text-align: center;
 }
 
-.prev:hover,
-.next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
+.dot:hover {
+    background-color: #bbb333;
 }
