@@ -16,7 +16,7 @@
 <body>
     <header class="cabecalho">
         <div class="container">
-            <h1 class="titulo ">CS Divisórias</h1>
+            <img class="logo" src="./imagens/cs_logo.jpg" alt="" srcset="">
             <nav class="menu">
 
                 <a class="menu-link" href="#inicio"> Home</a>
@@ -31,45 +31,148 @@
 
         </div>
     </header>
+    <div class="modal">
+        <div>
+            <img src="imagens/cs_galeria.jpg" id="modal_img" alt="" srcset="">
+        </div>
+        <span id="bt_close">&times;</span>
+    </div>
     <section class="conteudo">
         <p class="texto ">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Velit sint iste ipsa quasi possimus, nesciunt hic voluptatem culpa laboriosam pariatur maiores quibusdam est dolorem et voluptate repellat blanditiis! Nulla, vero.</p>
         <p class="texto ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed possimus sit sunt, unde maxime commodi obcaecati deleniti veniam harum a aperiam porro repellendus minus alias, fugit voluptas eos sequi tenetur.
         </p>
     </section>
-    <div class="slide-container">
+    <section>
+        <div class="slide-container">
 
-        <div class="Slides">
-            <div class="slides-show">
-                <img src="./imagem2.jpg" alt="">
+            <div class="Slides">
+                <div class="slides-show">
+                    <img src="./imagens/cs_galeria3.jpg" alt="">
+                </div>
+
             </div>
 
-        </div>
 
+            <div class="Slides">
+                <div class="slides-show">
+                    <img src="./imagens/imagem2.jpg" alt="">
+                </div>
 
-        <div class="Slides">
-            <div class="slides-show">
-                <img src="./imagem3.jpg" alt="">
             </div>
 
-        </div>
+            <div class="Slides">
+                <div class="slides-show">
+                    <img src="./imagens/imagem3.jpg" alt="">
+                </div>
 
-        <div class="Slides">
-            <div class="slides-show">
-                <img src="./imagem4.jpg" alt="">
             </div>
+            <div class="Slides">
+                <div class="slides-show">
+                    <img src="./imagens/imagem4.jpg" alt="">
+                </div>
 
+            </div>
         </div>
-    </div>
 
-    <div class="botoes">
+        <div class="botoes">
+            <div class="container">
+                <span class="dot" onclick="slideAtual(0)"></span>
+                <span class="dot " onclick="slideAtual(1)"></span>
+                <span class="dot " onclick="slideAtual(2)"></span>
+                <span class="dot " onclick="slideAtual(3)"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="quemSomos">
+        <h2 class="sub-titulo">Quem Somos</h2>
+        <p class="texto"> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum quasi sunt quam ipsum neque, ad eveniet! Officiis obcaecati nulla, optio doloremque nihil commodi reiciendis quod dolorem, quaerat officia sequi quibusdam?Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit. Iste saepe soluta explicabo autem aperiam aliquam id corrupti obcaecati commodi quod dolor quae, doloribus aspernatur labore, at cum est sunt et!lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus
+            recusandae temporibus error, excepturi sed veniam quae quam totam velit maiores maxime, dolorum, delectus ipsam illo doloremque quo? Nobis, culpa nihil.
+        </p>
+        <img src="" alt="" srcset="">
+    </section>
+
+    <section class="Galeria">
+
+        <h2 class="sub-titulo">Galeria</h2>
         <div class="container">
-            <span class="dot" onclick="slideAtual(0)"></span>
-            <span class="dot" onclick="slideAtual(1)"></span>
-            <span class="dot" onclick="slideAtual(2)"></span>
+            <div class="coluna">
+                <div class="card_img">
+                    <img class="miniatura" src="imagens/cs_galeria5.jpg" alt="" srcset="">
+                </div>
+                <div class="card_img">
+                    <img class="miniatura" src="imagens/cs_galeria6.jpg" alt="" srcset="">
+                </div>
+                <div class="card_img">
+                    <img class="miniatura" src="imagens/cs_galeria3.jpg" alt="" srcset="">
+                </div>
+            </div>
         </div>
-    </div>
+        <div class="coluna">
+            <div class="card_img">
+                <img class="miniatura" src="./imagens/cs_galeria.jpg" alt="" srcset="">
+            </div>
+            <div class="card_img">
+                <img class="miniatura" src="./imagens/cs_galeria2.jpg" alt="" srcset="">
+            </div>
+
+            <div class="card_img">
+                <img class="miniatura" src="./imagens/cs_galeria3.jpg" alt="" srcset="">
+            </div>
+        </div>
+
+        </div>
+
+
+    </section>
+
+    <section class="contato">
+
+        <h2 class="sub-titulo">Contato</h2>
+
+        <div class="formulario">
+            <form class="form" action="enviar.php" method="POST">
+                <fieldset class=" grupo ">
+                    <div class=" campo ">
+                        <label for=" Email ">E-mail:</label>
+                        <input type=" email " name="email" id=" email " required>
+                        <br><br>
+                        <label for=" Assunto ">Assunto:</label> <input type=" text " name="assunto" id=" assunto " required>
+                        <br><br>
+                    </div>
+                </fieldset>
+                <fieldset class=" grupo ">
+                    <div class=" campo ">
+                        <label for=" mensagem ">Mensagem:</label>
+
+                        <textarea name="mensagem" id="text " cols=" 36 " rows=" 9 "></textarea>
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <button class=" btn " type=" submit ">Enviar</button>
+                </fieldset>
+            </form>
+        </div>
+    </section>
+
+    <footer class=" rodape ">
+        <h2>Conheça nossas redes sociais!</h2>
+        <div class=" icons ">
+            <a class=" redes-sociais " target=" _blank " href=" https://www.instagram.com/csdivisorias/ "><i
+                    class=" fab fa-instagram "></i></a>
+            <a class=" redes-sociais " target=" _blank " href=" https://www.facebook.com/carvalhosilva2020 "><i
+                    class=" fab fa-facebook "></i></a>
+            <a class=" redes-sociais " href=" https://web.whatsapp.com/send?phone=5514988330008 "><i
+                    class=" fab fa-whatsapp "></i></a>
+        </div>
+
+        <p class=" copyright ">&copy; Copyright CSS DIVISÓRIAS - 2021</p>
+    </footer>
 </body>
-<!-- <script type="text/javascript" src="js/index.js"></script> -->
-<script type="text/javascript" src="js/dots.js"></script>
+<script type=" text/javascript " src=" js/script.js "></script>
+<script type=" text/javascript " src=" js/galeria.js "></script>
+<!-- <script type=" text/javascript " src=" js/dots.js "></script> -->
 
 </html>

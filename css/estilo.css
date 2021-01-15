@@ -1,15 +1,15 @@
 body {
-    width: 950px;
+    width: 960px;
     margin-left: auto;
     margin-right: auto;
-    background-color: #201140;
-    font-size: 16px;
+    background-color: #19294a;
 }
 
 .cabecalho .container {
+    margin: 5px;
     display: flex;
     justify-content: space-between;
-    background-color: antiquewhite;
+    background-color: #19294a;
     padding: 20px 0;
 }
 
@@ -20,22 +20,20 @@ body {
 .menu-link {
     padding: 10px;
     margin: auto 10px;
-    color: rgb(48, 50, 58);
+    color: rgb(239, 240, 241);
     display: block;
-    border: 1px solid #12154A;
+    border: 1px solid #272746;
 }
 
 .menu-link:hover {
-    background-color: #12154A;
+    background-color: #f6f6fc;
     transition: .6s;
-    color: antiquewhite;
+    color: #201140;
 }
 
-h1 {
-    font-family: 'Roboto Condensed', sans-serif;
-    color: #0011aa;
-    font-size: 36px;
-    padding: 15px;
+.logo {
+    width: 10%;
+    display: block;
 }
 
 .texto {
@@ -75,4 +73,132 @@ h1 {
 
 .dot:hover {
     background-color: #bbb333;
+}
+
+.sub-titulo {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: #7eb9d4ef;
+    font-size: 27.875px;
+}
+
+.cabecalho .container img {
+    overflow: hidden;
+    width: 120px;
+}
+
+.card_img {
+    width: 300px;
+    height: 300px;
+    overflow: hidden;
+    margin: 25px;
+}
+
+.miniatura {
+    height: 100%;
+    cursor: pointer;
+    transition: all linear 0.2s;
+}
+
+.miniatura:hover {
+    filter: sepia(0.275);
+    transform: scale(1.1);
+}
+
+.coluna {
+    display: flex;
+    justify-content: center;
+}
+
+#modal_img {
+    width: 65vw;
+    transform: scale(0);
+    transition: all linear .3s;
+}
+
+.modal_active #modal_img {
+    transform: scale(0.75);
+}
+
+.modal {
+    width: 100vw;
+    height: 100vw;
+    justify-content: center;
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0.7s linear, opacity 0.5s linear;
+}
+
+#bt_close {
+    color: #fff;
+    background-color: #000;
+    position: absolute;
+    top: 22px;
+    left: 992px;
+    padding: 5px 10px;
+    font-size: 25px;
+    border: solid 1px #fff;
+    transition: all ease-out .4s;
+    cursor: pointer;
+}
+
+#bt_close:hover {
+    background-color: #272746;
+}
+
+.modal_active {
+    visibility: visible;
+    opacity: 1;
+}
+
+fieldset {
+    border: 0;
+}
+
+.campo {
+    margin-bottom: 1em;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #7eb9d4ef;
+    display: inline-flex;
+}
+
+.campo input[type="text"],
+.campo input[type="email"],
+.campo textarea {
+    padding: 0.2em;
+    border: 1px solid #19294a;
+    display: block;
+}
+
+.btn {
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    background: #f6f6fc;
+    color: #201140;
+    padding: 0.2em 0.4em;
+}
+
+.titulo-contato {
+    position: relative;
+}
+
+.formulario {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rodape {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    color: #7eb9d4ef;
+    font-size: 17.75px;
+}
+
+.icons a {
+    font-size: 28.875px;
 }
